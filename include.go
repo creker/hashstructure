@@ -18,5 +18,5 @@ type IncludableMap interface {
 // to override the hash value. This value will override the hash value for
 // the entire struct. Entries in the struct will not be hashed.
 type Hashable interface {
-	Hash() (uint64, error)
+	Hash() ([]byte, error)
 }
